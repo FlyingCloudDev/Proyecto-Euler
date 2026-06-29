@@ -1,15 +1,18 @@
 function sumaMultiplos(k, n) {
+    
     let p = Math.floor((n - 1) / k);
     return k * (p * (p + 1)) / 2;
 }
 
 function multiplesOf3Or5(number) {
+    
     return sumaMultiplos(3, number) + 
            sumaMultiplos(5, number) - 
            sumaMultiplos(15, number);
 }
 
 console.log(multiplesOf3Or5(1000));
+
 /*
 La funcion "sumaMultiplos" usa una formula matemática para
 SUMAR TODOS LOS MULTIPLOS DE "K" MENORES QUE "N" SIN USAR NINGUN BUCLE:
